@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gigapet - Ghost 🐶</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🐾 My Giga Pet</h1>
+    </header>
+
+    <main>
+        <!-- Pet image section -->
+        <section class="pet-image-container">
+            <img class="pet-image" src="images/pet.png" alt="Your pet">
+            <!-- Visual notification bubble - shown after button clicks (not console.log or alert) -->
+            <div class="speech-bubble" id="speech-bubble"></div>
+        </section>
+
+        <!-- Dashboard section -->
+        <section class="dashboard">
+            <div class="pet-name"><span class="name"></span></div>
+
+            <!-- Stat cards for weight and happiness -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span class="stat-label">⚖️ Weight</span>
+                    <span class="stat-value weight"></span>
+                    <span class="stat-unit">lbs</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">💛 Happiness</span>
+                    <span class="stat-value happiness"></span>
+                    <span class="stat-unit">tail wags/min</span>
+                </div>
+            </div>
+
+            <div class="mood-display">Mood: <span class="mood-emoji">😐</span></div>
+
+            <div class="button-container">
+                <button class="treat-button">🦴 Treat</button>
+                <button class="play-button">🎾 Play</button>
+                <button class="exercise-button">🏃 Exercise</button>
+                <!-- NEW ACTION BUTTON: Bath -->
+                <button class="bath-button">🛁 Bath</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+        integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
